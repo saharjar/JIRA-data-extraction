@@ -115,7 +115,6 @@ class JiraAPI:
 
                 sql_query += f"{field_id} {type}, "
             sql_query = sql_query.rstrip(", ") + ");"
-
             try:
                 cursor = db_connection.cursor()
                 cursor.execute(sql_query)
